@@ -1,0 +1,81 @@
+:root {
+    --main-color: #40e3c8;
+    --secondary-color: #5185ec;
+    --font-size-large: 50px;
+}
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+    color: var(--main-color);
+    background-color: antiquewhite;
+    font-size: var(--font-size-large);
+    
+}
+
+.box {
+    width: 1050px;
+    padding: 30px;
+    margin: 15px auto;
+    border: 2px solid black;
+    border-radius: 50px;
+    background-color: var(--main-color);
+    color: #f4f4f4;
+    text-align: center;
+    font-size: larger;
+}
+
+.box2{
+    width: 1000px;
+    padding: 35px;
+    margin: 30px auto;
+    border: 2px solid black;
+    border-radius: 50px;
+    background-color: var(--main-color);
+    color: #f4f4f4;
+    font-size: 30px;
+}
+
+.navbar{
+    border-radius: 30px;
+    border: 2px solid black;
+    padding: 5px;
+    margin: 15px auto;
+    width: 1050px;
+}
+
+.navbar-brand{
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    padding: 20px;
+    margin: 20px auto;
+}
+
+
+.nav-link{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+    color: #000000;
+    font-size: 50px;
+    padding: 20px;
+    margin: 20px auto;
+}
+
+footer{
+    color: black;
+    font-size: 15px;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 5px;
+    margin: 10px auto;
+    position: fixed;
+    bottom: 20px;
+    left: 40%;
+}
+
+h2{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    font-size: larger;
+}
