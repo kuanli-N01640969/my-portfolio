@@ -4,6 +4,7 @@
     --font-size-large: 50px;
     --border-color: rgb(137, 137, 137);
     --text-shadow: rgb(243, 116, 255);
+    --box-shadow: #ff8e8e;
 }
 
 body{
@@ -23,7 +24,7 @@ body{
     color: #f4f4f4;
     text-align: center;
     text-shadow: 5px 5px 5px var(--text-shadow);
-    box-shadow: 10px -5px 30px 1px #ff8e8e;
+    box-shadow: 10px -5px 30px 1px var(--box-shadow);
     font-size: larger;
 }
 
@@ -88,7 +89,7 @@ body{
     border-radius: 20px;
     padding: 5px;
     margin: 10px auto;
-    position: fixed;
+    position: static;
     bottom: 20px;
     left: 0;
     right: 0;
@@ -101,6 +102,64 @@ body{
     color: rgb(0, 0, 0);
     font-size: larger;
     text-shadow: 5px 5px 5px rgb(111, 242, 222);
+}
+
+.contact{
+    width: 75%;
+    padding: 30px;
+    margin: 15px auto;
+    border: 2px solid var(--border-color);
+    border-radius: 50px;
+    background-color: var(--main-color);
+    color: #f4f4f4;
+    text-align: center;
+    text-shadow: 5px 5px 5px var(--text-shadow);
+    box-shadow: 10px -5px 30px 1px var(--box-shadow);
+    font-size: 1.0em; 
+}
+
+#contact-form{
+    width: 75%;
+    padding: 30px;
+    margin:  auto;
+    border: 2px solid var(--border-color);
+    border-radius: 50px;
+    background-color: var(--main-color);
+    color: #f32cd5;
+    text-align: left;
+    text-shadow: 5px 5px 5px rgb(240, 224, 11);
+    box-shadow: 10px -5px 30px 1px var(--box-shadow);
+    font-size: 0.8em;
+}
+
+.button{
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+#save-btn{
+  padding: 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+#save-btn:hover{
+  color: black;
+  background-color: rgb(158, 158, 158);
+}
+#clear-btn{
+  padding: 10px;
+  background-color: #fb127e;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+#clear-btn:hover{
+  color: black;
+  background-color: rgb(158, 158, 158);
 }
 
 @media (max-width:600px){
