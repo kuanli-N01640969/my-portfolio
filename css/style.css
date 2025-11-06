@@ -125,9 +125,9 @@ body{
     border: 2px solid var(--border-color);
     border-radius: 50px;
     background-color: var(--main-color);
-    color: #f32cd5;
+    color: #f6fe00;
     text-align: left;
-    text-shadow: 5px 5px 5px rgb(240, 224, 11);
+    text-shadow: 5px 5px 5px rgb(255, 157, 222);
     box-shadow: 10px -5px 30px 1px var(--box-shadow);
     font-size: 0.8em;
 }
@@ -162,6 +162,24 @@ body{
   background-color: rgb(158, 158, 158);
 }
 
+.error {
+    color: red;
+    font-size: 0.7em;
+    }
+.success {
+    color: green;
+    font-size: 1.0em;
+    text-align: center;
+}
+
+input[type="text"], input[type="email"], input[class="form-select"], input[type="textBox"] {
+    width: 100%;
+    padding: 8px;
+    margin: auto; 
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+                                                                                                                             
 @media (max-width:600px){
     .box{
         font-size: 20px;
