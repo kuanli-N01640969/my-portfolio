@@ -137,6 +137,7 @@ body{
   justify-content: center;
   gap: 15px;
 }
+
 #save-btn{
   padding: 10px;
   background-color: #28a745;
@@ -179,7 +180,41 @@ input[type="text"], input[type="email"], input[class="form-select"], input[type=
     border: 1px solid #ccc;
     border-radius: 4px;
 }
-                                                                                                                             
+
+.gallery {
+    display: flex;
+    justify-content: space-around;
+    gap: 100px;
+
+}
+
+.project {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 15px;
+    margin: auto;
+    width: 35%;
+    box-shadow: 5px 5px 5px 5px rgba(213, 64, 64, 0.1);
+    font-size: 0.8em;
+    text-align: center;
+    color: var(--secondary-color);
+}
+
+button {
+    background-color: #17bf71;
+    color: rgb(255, 255, 255);
+    border: 1px solid black;
+    padding: 5px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #949494;
+    color: #000000;
+}
+
 @media (max-width:600px){
     .box{
         font-size: 20px;
