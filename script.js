@@ -1,3 +1,23 @@
+ //Project Toggle Button
+const buttons = document.querySelectorAll('.toggle-btn');
+
+//Button loop with click event
+buttons.forEach(function(button) {
+    button.addEventListener('click', function() {
+        //Assign the variable to the next element in html, which is <div class="details">
+        const details = button.nextElementSibling;
+        //Toggle function combine with CSS manipulation to display or hide details, by changing the class
+        details.classList.toggle('show');
+        //Change button text to the reverse command
+        if (details.classList.contains('show')) {
+          button.textContent = 'Hide Details';
+        } else {
+          button.textContent = 'Show Details';
+        }
+    });
+});
+
+//Contact Form Validation
 const form = document.getElementById('contact-form');
 
 const nameInput = document.getElementById('name');
